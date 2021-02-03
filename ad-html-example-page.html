@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>HTML Example</title>
+
+<!--This section includes all of the CSS styling--> 
+<style>
+
+
+.container { 
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px 10px 10px;  
+    align-self: center;
+}
+
+p {
+    font-size: 0.94rem;
+}
+
+body {
+    background: url(http://staff.hamk.fi/~tsaksa/temp/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: xx-large;    
+    margin-bottom: 4px;
+    margin-top: 6px;
+    
+    }
+
+header {    
+    text-align: center;
+    font-size: xx-large;  
+    padding: 10px 10px 10px 10px; 
+}
+
+.row {
+    padding: 10px 10px 10px 10px;  
+}
+
+footer {
+    padding: 1px 1px 1px 1px;
+}
+
+</style><!-- End of the CSS Styling (internal)-->
+
+  </head>
+  <body>
+
+    <!-- A div tag for the container. Plus more div tags for the row parameters-->
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"><!-- Covers 12 grid columns-->
+            <header>
+                AD - Example HTML Page
+            </header>
+        </div>
+    </div>
+
+    <main>
+        <div class="row">
+            <div class="col-md-6"><!-- Covers 6 grid columns-->
+                <article>
+                    <h1><strong>The Mystery Stone</strong></h1>
+                <!-- I could have used a 'Lorem Picsum photo but I decided to be creative -->
+                    <p> The picture to the right, shows the mysterious stone known only by 
+                        the moniker ‘The Mystery Stone’. Although unassuming in appearance, 
+                        and arguably outwardly bland by nature, no-one actually knows where 
+                        the stone came from. Nor, apparently, does anyone really care. That 
+                        was, however, until a consortium of bored, yet intrepid, archeological 
+                        researchers at a respected University (some speculate, Harvard) decided 
+                        to spend almost two entire minutes studying and poring over every little detail 
+                        contained within the ponderous photo. Despite this, however, the stone’s 
+                        mysterious secrets remain just that – an unforgiving enigma. 
+                        Significantly, in 2018, some particularly rabble-rousing 
+                        (basically good-for-nothing) Student Union student dissenters, 
+                        boldly speculated that ‘only the pixels know’ the true story of ‘that 
+                        worthless, crappy, little stone’. On one occasion, famously, 
+                        when asked about the stone on live TV, the serial 
+                        tech-entrepreneur Elon Musk once nonchalantly stated: “I don’t know 
+                        where the mystery stone came from, it’s a mystery.”</p>
+            
+                </article>
+            </div>
+            <div class="col-md-6"><!-- Covers 6 grid columns. The image is 'fluid'-->
+               <div class="container-fluid">
+                    <aside>
+                        <img src="https://image.freepik.com/free-photo/little-stone-road-side_54391-1172.jpg" 
+                        class="img-fluid" alt="Image of The Mystery Stone">
+                    </aside>
+                </div>
+            </div> 
+        </div>
+              
+    <!--End of main-->
+    </main>
+
+    <!--A new section and row for the footer section. Includes a red 'button' but link not working, unfortunately.-->
+    <div class="row">
+        <div class="col-md-12"><!-- Covers 12 grid columns-->
+            <footer>
+                <!--Originally, I used a nice outbound linking button, but I could not change it to red, unfortunately-->
+                <button type="button" class="btn btn-danger">Read more</button>    
+            </footer>
+        </div>
+    </div>
+
+
+<!--End of container-->
+</div>
+
+    <!-- I took the 'option 1': Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
